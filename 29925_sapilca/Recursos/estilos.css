@@ -1,0 +1,162 @@
+/*
+ * NUEVA PALETA DE COLORES PARA estilos.css
+ * Reemplaza todo el contenido de Recursos/estilos.css con este código.
+ */
+
+body {
+  width:1300px;
+  margin: 0 auto;  /* Para que el contenedor este centrado */
+  text-align:center;
+  background-color: #f0f2f5; /* Añadido un fondo gris claro al body */
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 50px;
+  color:#333; /* Cambiado de blanco a oscuro para fondo claro */
+  font-family:Verdana, Geneva, sans-serif;
+  font-size: 30px;
+}
+
+.Texto{
+  text-align: center;
+  color:#000;
+  font-family:Arial;
+  font-size: 25px;
+}
+
+.Boton {
+    background-color: #0056b3; /* Botón azul */
+    border-width: 2px;
+	 border-style:solid;
+	 border-color: #004a99;
+	 border-radius: 10px;
+    color: #ffffff; /* Texto blanco */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto hover */
+}
+
+.Boton:hover {
+    background-color: #004a99; /* Color más oscuro al pasar el ratón */
+}
+
+/* HEADER   */
+#header {   
+  position:absolute;
+  left:50px;
+  top:20px;
+  width: 1260px;
+  height:170px;
+  float: none;
+  background:inherit;
+  background-color: #004a99; /* Azul oscuro */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+ }
+
+/* navBar  */
+#navBar {
+  position:absolute;
+  left:50px;
+  top:200px;
+  width:1260px;
+  height:70px;
+  float: none;
+  background:inherit;
+  background-color: #e9ecef; /* Gris claro */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  padding-top: 10px;
+}
+
+
+/* leftMenu  */
+#leftMenu {
+  position:absolute;
+  left:50px;
+  top:280px;
+  width:200px;
+  height:320px;
+  float: left;
+  background:inherit;
+  background-color: #ffffff; /* Blanco */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  padding-top: 80px;
+ }
+
+ 
+ 
+/* content */
+#content {
+  position:absolute;
+  left:270px;
+  top:280px;
+  width:600px;
+  height:320px;
+  float: left;
+  background:inherit;
+  background-color: #ffffff; /* Blanco */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+}
+
+
+
+/* rigthMenu */
+#rightMenu {
+  position:absolute;
+  left:890px;
+  top:280px;
+  width:420px;
+  height:320px;
+  float: left;
+  background:inherit;
+  background-color: #343a40; /* Gris oscuro/Negro */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+
+/* footer  */
+#footer {
+  position:absolute;
+  left:50px;
+  top:620px;
+  width:1260px;
+  height:60px;
+  float: none;
+  background:inherit;
+  background-color: #e9ecef; /* Gris claro (igual que navBar) */
+  box-sizing:border-box;
+  border-width:5px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:10px;
+  padding-top: 10px;
+}

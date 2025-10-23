@@ -5,8 +5,6 @@
         $referencia = htmlspecialchars($_POST['Mensaje']);
 
         // Mostrar los datos
-        // Nota: En una aplicación real, NUNCA muestres una contraseña (Código Postal) en pantalla.
-        // Esto es solo para fines de depuración del ejercicio.
         echo "<p><strong>Código Postal (Ingresado):</strong> " . $codigo_postal . "</p>";
         echo "<p><strong>Referencia de Dirección:</strong> " . $referencia . "</p>";
 

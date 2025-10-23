@@ -1,13 +1,17 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>LOGISTICA</title>
+    <style>
+      #FormularioConfidencial {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <form action="./Script_PHP/registrar.php" method="POST" name="FormDireccion" target="_blank">
-       <fieldset> <!--agrupa varios elementos del form-->
+       <fieldset>
          <legend>DIRECCION DE ENVIO</legend>
          Calle Principal <br>
          <input type="text" name="txtPrincipal" value="">
@@ -16,10 +20,8 @@
          <input type="text" name="txtTransversal" value="">
         
 		<br><br>
-		<!--<input type="checkbox" name="chbEntrega1" value="PROPIETARIO"checked> Entrega al propietario.<br>
-        <input type="checkbox" name="chbEntrega2" value="TERCERO"> Entrega a un tercero.-->
-        <input type="radio" id="entrega" name="rbEntrega2" value="PROPIETARIO" checked>Propietario<br>
-        <input type="radio" id="entrega" name="rbEntrega2" value="TERCERO">Tercero
+        <input type="radio" id="rbPropietario" name="rbEntrega2" value="PROPIETARIO" checked onclick="actualizarFormulario()">Propietario<br>
+        <input type="radio" id="rbTercero" name="rbEntrega2" value="TERCERO" onclick="actualizarFormulario()">Tercero
 
          <br><br>
          Cantones: <select  name="cmbCantones">
@@ -28,22 +30,20 @@
 					<option value="R">Rumiñahui</option>
 					<option value="M">Mejia</option>
              </optgroup>
-			 
 			 <optgroup label="GUAYAS">
 					<option value="G">Guayaquil</option>
 					<option value="S">Santa Elena</option>
 					<option value="SL">Salinas</option>
              </optgroup>
-			 
          </select>
 		 
          <br><br>
-           <input type="submit" name="SubmitDireccion" value="REGISTRAR">
+           <input type="submit" name="SubmitDireccion" id="btnRegistrar" value="REGISTRAR">
        </fieldset>
     </form>
 	
 	<br>
-    <form action="./Script_PHP/procesa.php" method="POST" name="FormConfidencial" target="_blank">
+    <form action="./Script_PHP/procesa.php" method="POST" name="FormConfidencial" target="_blank" id="FormularioConfidencial">
       <br>  
        <fieldset>
          <legend>INFORMACIÓN CONFIDENCIAL</legend>
@@ -59,6 +59,12 @@
     </form>
     <br><br>
     <a href="index.html">Regresar</a>
+    
+    <script src="js/validar.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', actualizarFormulario);
+    </script>
     
   </body>
 </html>

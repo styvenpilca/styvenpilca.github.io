@@ -16,8 +16,7 @@
         $foto_nombre = "No se subió archivo";
         if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
             $foto_nombre = htmlspecialchars($_FILES['foto']['name']);
-            // Opcional: mover el archivo subido a una carpeta 'uploads'
-            // move_uploaded_file($_FILES['foto']['tmp_name'], 'uploads/' . $foto_nombre);
+
         }
 
         // Mostrar los datos recibidos

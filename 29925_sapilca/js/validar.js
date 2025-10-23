@@ -1,11 +1,4 @@
-﻿/*
- * ========= ARCHIVO ÚNICO: validar.js =========
- */
-
-/*
- * --- Lógica para FormRegistro.html ---
- */
-
+﻿
 function actualizarFormulario() {
   // Obtenemos los elementos del DOM
   var radioTercero = document.getElementById('rbTercero');
@@ -29,7 +22,7 @@ function actualizarFormulario() {
 }
 
 /*
- * --- Lógica para FormContacto.html ---
+Lógica para FormContacto.html
  */
 
 // 1. FUNCIÓN DE VALIDACIÓN (Llamada desde 'enviarFormulario')

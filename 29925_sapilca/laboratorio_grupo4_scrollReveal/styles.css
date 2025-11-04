@@ -1,0 +1,78 @@
+ :root {
+     --bs-primary: #f77912;
+     --bs-secondary: #ffae00;
+ }
+
+ /* Estilo para inicio*/
+ .inicio {
+     background-image: linear-gradient(rgba(171, 163, 163, 0.836), rgba(93, 93, 2, 0.689)), url('img/bg.png');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     min-height: 400px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+ }
+
+ .navbar-brand {
+     font-weight: 700;
+ }
+
+ .btn-primary {
+     background-color: var(--bs-primary);
+     border-color: var(--bs-primary);
+ }
+
+ .btn-primary:hover {
+     background-color: #e2a31a;
+     border-color: #ffb508;
+ }
+
+ .btn-secondary {
+     background-color: var(--bs-secondary);
+     border-color: var(--bs-secondary);
+     color: #333;
+ }
+
+ .btn-secondary:hover {
+     background-color: #e0a800;
+     border-color: #d39e00;
+     color: #333;
+ }
+
+ .feature-icon {
+     font-size: 3rem;
+     color: var(--bs-primary);
+ }
+
+ /* Oculta los elementos para ScrollReveal*/
+ .reveal {
+     visibility: hidden;
+ }
+
+ #contacto, footer, nav{
+     background: #f12711;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #f5af19, #f12711);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+#productos .card-img-top {
+            width: 190px; 
+            height: 190px; 
+            object-fit: cover;
+            margin: 1rem auto 0;
+            display: block;
+}
+.social-links a {
+            transition: opacity 0.3s ease;
+            color: white;
+        }
+        .social-links a:hover {
+            opacity: 0.8;
+            color: white;
+}
